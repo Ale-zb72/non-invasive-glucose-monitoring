@@ -15,13 +15,7 @@ The system captures optical signals (RED & IR) from biological tissue and stores
 - Real-time data logging in CSV format
 
 # Architecture
-MAX30102 Sensors (x4)
-        ↓
-I2C Multiplexer (TCA9548A)
-        ↓
-Raspberry Pi Pico (MicroPython)
-        ↓
-Data Acquisition → CSV Output
+MAX30102 Sensors (x4) -> I2C Multiplexer (TCA9548A) -> Raspberry Pi Pico (MicroPython) -> Data Acquisition → CSV Output
 
 # Implementation Details
 ## Acquisition Strategy
